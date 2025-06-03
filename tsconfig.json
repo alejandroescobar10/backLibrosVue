@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "ES2020", // Versión mínima de JS generada
+        "module": "commonjs", // Módulos compatibles con Node.js
+        "rootDir": "src", // Carpeta raíz de código TS
+        "outDir": "dist", // Carpeta de salida de JS compilado
+        "strict": true, // Activa comprobaciones estrictas
+        "esModuleInterop": true, // Compatibilidad con importaciones
+        "experimentalDecorators": true, // Habilita decoradores (necesario para
+        "emitDecoratorMetadata": true, // Genera metadata para reflect-metadata
+        "skipLibCheck": true // Omite checks de dependencias
+    },
+    "include": [
+        "src"
+    ]
+}
