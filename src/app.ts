@@ -9,9 +9,14 @@ const app = express();
 
 // Configuración de CORS
 app.use(cors({
-    origin: ['https://front-libros-vue.vercel.app', 'http://localhost:5173'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin: [
+        'https://front-libros-vue.vercel.app',
+        'https://front-libros-o4jpes4fg-alejandro-escobar-ms-projects.vercel.app', // agrega esta también
+        'http://localhost:5173'
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
 }));
 
 app.use(express.json());
