@@ -9,7 +9,7 @@ const app = express();
 
 // Configuración de CORS
 app.use(cors({
-    origin: ['https://vue-frontend-kappa.vercel.app', 'http://localhost:5173'],
+    origin: ['https://front-libros-vue.vercel.app', 'http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
